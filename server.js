@@ -14,5 +14,5 @@ app.use("/static", express.static(path.join(__dirname, "/public")));
 
 app.get("/", homeController.index);
 
-const port = 3000;
-app.listen(port, () => console.log(`App listening on port ${port}!`));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
