@@ -1,0 +1,150 @@
+<!-- banner -->
+<script src="/static/js/jquery.vide.min.js"></script>
+<div data-vide-bg="video/beach1">
+  <div class="banner jarallax">
+    <div class="w3layouts-header-top">
+      <div class="container">
+        <div class="w3-header-top-grids">
+          <div class="w3-header-top-left">
+            <p>
+              <i class="fa fa-volume-control-phone" aria-hidden="true"></i> +1
+              234 567 8901
+            </p>
+          </div>
+          <div class="w3-header-top-right">
+            <div class="agileinfo-social-grids">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-vk"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <div class="head">
+      <div class="container">
+        <div class="navbar-top">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand logo">
+              <h1>
+                <a href="index.html"
+                  ><i class="fa fa-globe" aria-hidden="true"></i> World
+                  <span>Tour</span></a
+                >
+              </h1>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div
+            class="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
+          >
+            <ul class="nav navbar-nav link-effect-4">
+              <li class="active first-list"><a href="index.html">Home</a></li>
+              <li><a href="#about" class="scroll">About</a></li>
+              <li><a href="#destinations" class="scroll">Destinations</a></li>
+              <li><a href="#gallery" class="scroll">Gallery</a></li>
+              <li><a href="#offers" class="scroll">Offers</a></li>
+              <li><a href="#contact" class="scroll">Contact</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="w3layouts-banner-slider">
+      <div class="container">
+        <div class="slider">
+          <div class="callbacks_container">
+            <ul class="rslides callbacks callbacks1" id="slider4">
+              <li>
+                <div class="wthree-top-info">
+                  <div class="agileits-banner-info">
+                    <p>Etiam ut maximus</p>
+                    <h3>Lorem ipsum dolor sit</h3>
+                  </div>
+                  <div class="agileits-boder"></div>
+                </div>
+              </li>
+              <li>
+                <div class="wthree-top-info">
+                  <div class="agileits-banner-info">
+                    <p>Proin sapien ante</p>
+                    <h3>Donec quis diam enim</h3>
+                  </div>
+                  <div class="agileits-boder"></div>
+                </div>
+              </li>
+              <li>
+                <div class="wthree-top-info">
+                  <div class="agileits-banner-info">
+                    <p>Etiam ut maximus</p>
+                    <h3>Lorem ipsum dolor sit</h3>
+                  </div>
+                  <div class="agileits-boder"></div>
+                </div>
+              </li>
+              <li>
+                <div class="wthree-top-info">
+                  <div class="agileits-banner-info">
+                    <p>Proin sapien ante</p>
+                    <h3>Donec quis diam enim</h3>
+                  </div>
+                  <div class="agileits-boder"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+          <script>
+            // You can also use "$(window).load(function() {"
+            $(function () {
+              // Slideshow 4
+              $("#slider4").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                  $(".events").append("<li>before event fired.</li>");
+                },
+                after: function () {
+                  $(".events").append("<li>after event fired.</li>");
+                },
+              });
+            });
+          </script>
+          <!--banner Slider starts Here-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //banner -->

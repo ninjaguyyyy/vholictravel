@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <%- include('./includes/headTag') %>
+  </head>
+  <body>
+    <div class="wrapper" id="wrapper">
+      <%- include('./includes/banner') %>
+
+      <!-- booking -->
+      <div class="booking" id="booking">
+        <div class="container">
+          <div class="agileits-heading wthree-heading">
+            <h2>Make Your Reservation</h2>
+            <p>Vivamus pulvinar imperdiet</p>
+          </div>
+          <div class="book-reservation">
+            <form action="#" method="post">
+              <div class="col-md-4 form-date-w3-agileits">
+                <label
+                  ><i class="fa fa-user" aria-hidden="true"></i> Name :</label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required=""
+                />
+              </div>
+              <div class="col-md-4 form-date-w3-agileits">
+                <label
+                  ><i class="fa fa-envelope" aria-hidden="true"></i> Email
+                  :</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required=""
+                />
+              </div>
+              <div class="col-md-4 form-date-w3-agileits">
+                <label
+                  ><i class="fa fa-calendar" aria-hidden="true"></i> Arrival
+                  Date :</label
+                >
+                <input
+                  id="datepicker1"
+                  name="Text"
+                  type="text"
+                  value="mm/dd/yyyy"
+                  onfocus="this.value = '';"
+                  onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+                  required=""
+                />
+              </div>
+              <div class="col-md-4 form-date-w3-agileits">
+                <label
+                  ><i class="fa fa-calendar" aria-hidden="true"></i> Departure
+                  Date :</label
+                >
+                <input
+                  id="datepicker2"
+                  name="Text"
+                  type="text"
+                  value="mm/dd/yyyy"
+                  onfocus="this.value = '';"
+                  onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+                  required=""
+                />
+              </div>
+              <div
+                class="
+                  col-md-4
+                  form-left-agileits-w3layouts
+                  bottom-w3ls
+                  form-date-w3-agileits
+                "
+              >
+                <label
+                  ><i class="fa fa-home" aria-hidden="true"></i> Choose a Room
+                  :</label
+                >
+                <select class="form-control">
+                  <option>Room</option>
+                  <option>Standard Double Room</option>
+                  <option>Standard Family Room</option>
+                  <option>Garden Family Room</option>
+                  <option>Deluxe Double Room</option>
+                  <option>Executive Junior Suite</option>
+                  <option>Maisonette</option>
+                </select>
+              </div>
+              <div
+                class="
+                  col-md-4
+                  form-left-agileits-w3layouts form-date-w3-agileits
+                "
+              >
+                <label
+                  ><i class="fa fa-users" aria-hidden="true"></i> No.of People
+                  :</label
+                >
+                <select class="form-control">
+                  <option>Persons</option>
+                  <option>1 Person</option>
+                  <option>2 People</option>
+                  <option>3 People</option>
+                  <option>4 People</option>
+                  <option>5 People</option>
+                  <option>More</option>
+                </select>
+              </div>
+              <div class="clearfix"></div>
+              <div class="make">
+                <input type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- //booking -->
+      <!-- popular -->
+      <div class="popular" id="destinations">
+        <div class="container">
+          <div class="agileits-heading">
+            <h2>Popular Destinations</h2>
+            <p>Vivamus pulvinar imperdiet</p>
+          </div>
+          <div class="agileinfo-popular-grids">
+            <div class="col-md-3 agileinfo-popular-grid">
+              <img src="/static/images/1.jpg" alt="" />
+              <h4>Paris</h4>
+            </div>
+            <div class="col-md-3 agileinfo-popular-grid">
+              <img src="/static/images/2.jpg" alt="" />
+              <h4>London</h4>
+            </div>
+            <div class="col-md-3 agileinfo-popular-grid">
+              <img src="/static/images/4.jpg" alt="" />
+              <h4>Maldives</h4>
+            </div>
+            <div class="col-md-3 agileinfo-popular-grid">
+              <img src="/static/images/5.jpg" alt="" />
+              <h4>Bermuda</h4>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <!-- //popular -->
+      <!-- choose -->
+      <div class="choose" id="about">
+        <div class="container">
+          <div class="agileits-heading wthree-heading">
+            <h3>Why Choose Us</h3>
+            <p>Vivamus pulvinar imperdiet</p>
+          </div>
+          <div class="wthree-choose-grids">
+            <div class="col-md-4 wthree-choose-grid">
+              <i class="fa fa-map" aria-hidden="true"></i>
+              <h5>Curabitur viverra nunc</h5>
+              <p>
+                Ut nulla libero, luctus quis varius efficitur, molestie non
+                felis. Phasellus eget rutrum enim. Sed ac est tincidunt,
+                tristique quam aliquam
+              </p>
+            </div>
+            <div class="col-md-4 wthree-choose-grid">
+              <i class="fa fa-ship" aria-hidden="true"></i>
+              <h5>Curabitur viverra nunc</h5>
+              <p>
+                Ut nulla libero, luctus quis varius efficitur, molestie non
+                felis. Phasellus eget rutrum enim. Sed ac est tincidunt,
+                tristique quam aliquam
+              </p>
+            </div>
+            <div class="col-md-4 wthree-choose-grid">
+              <i class="fa fa-train" aria-hidden="true"></i>
+              <h5>Curabitur viverra nunc</h5>
+              <p>
+                Ut nulla libero, luctus quis varius efficitur, molestie non
+                felis. Phasellus eget rutrum enim. Sed ac est tincidunt,
+                tristique quam aliquam
+              </p>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <!-- //choose -->
+      <!-- gallery -->
+      <div class="gallery" id="gallery">
+        <div class="container">
+          <div class="agileits-heading">
+            <h3>Our Gallery</h3>
+            <p>Vivamus pulvinar imperdiet</p>
+          </div>
+          <div class="w3-agileits-gallery-grids">
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a
+                    class="example-image-link"
+                    href="/static/images/1.jpg"
+                    data-lightbox="example-set"
+                    data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque."
+                  >
+                    <img src="/static/images/1.jpg" alt="" />
+                    <figcaption></figcaption>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a
+                    class="example-image-link"
+                    href="/static/images/2.jpg"
+                    data-lightbox="example-set"
+                    data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque."
+                  >
+                    <img src="/static/images/2.jpg" alt="" />
+                    <figcaption></figcaption>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a
+                    class="example-image-link"
+                    href="/static/images/4.jpg"
+                    data-lightbox="example-set"
+                    data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque."
+                  >
+                    <img src="/static/images/4.jpg" alt="" />
+                    <figcaption></figcaption>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a
+                    class="example-image-link"
+                    href="/static/images/5.jpg"
+                    data-lightbox="example-set"
+                    data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque."
+                  >
+                    <img src="/static/images/5.jpg" alt="" />
+                    <figcaption></figcaption>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a
+                    class="example-image-link"
+                    href="/static/images/7.jpg"
+                    data-lightbox="example-set"
+                    data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque."
+                  >
+                    <img src="/static/images/7.jpg" alt="" />
+                    <figcaption></figcaption>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a
+                    class="example-image-link"
+                    href="/static/images/8.jpg"
+                    data-lightbox="example-set"
+                    data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque."
+                  >
+                    <img src="/static/images/8.jpg" alt="" />
+                    <figcaption></figcaption>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a
+                    class="example-image-link"
+                    href="/static/images/9.jpg"
+                    data-lightbox="example-set"
+                    data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque."
+                  >
+                    <img src="/static/images/9.jpg" alt="" />
+                    <figcaption></figcaption>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a
+                    class="example-image-link"
+                    href="/static/images/1.jpg"
+                    data-lightbox="example-set"
+                    data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque."
+                  >
+                    <img src="/static/images/1.jpg" alt="" />
+                    <figcaption></figcaption>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a
+                    class="example-image-link"
+                    href="/static/images/2.jpg"
+                    data-lightbox="example-set"
+                    data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque."
+                  >
+                    <img src="/static/images/2.jpg" alt="" />
+                    <figcaption></figcaption>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a
+                    class="example-image-link"
+                    href="/static/images/4.jpg"
+                    data-lightbox="example-set"
+                    data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque."
+                  >
+                    <img src="/static/images/4.jpg" alt="" />
+                    <figcaption></figcaption>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a
+                    class="example-image-link"
+                    href="/static/images/5.jpg"
+                    data-lightbox="example-set"
+                    data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque."
+                  >
+                    <img src="/static/images/5.jpg" alt="" />
+                    <figcaption></figcaption>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a
+                    class="example-image-link"
+                    href="/static/images/7.jpg"
+                    data-lightbox="example-set"
+                    data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque."
+                  >
+                    <img src="/static/images/7.jpg" alt="" />
+                    <figcaption></figcaption>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <script src="/static/js/lightbox-plus-jquery.min.js"></script>
+          </div>
+        </div>
+      </div>
+      <!-- //gallery -->
+      <!-- offer -->
+      <div class="jarallax offer">
+        <div class="container">
+          <div class="agile-offer-slide">
+            <div class="slider">
+              <div class="callbacks_container">
+                <ul class="rslides callbacks callbacks1" id="slider3">
+                  <li>
+                    <div class="w3-agile-offer">
+                      <h5>From $650</h5>
+                      <div class="w3-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <h4>Curabitur viverra nunc</h4>
+                      <p>April <span>24th</span> to June <span>17th</span></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="w3-agile-offer">
+                      <h5>From $400</h5>
+                      <div class="w3-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <h4>Nullam sit amet quam</h4>
+                      <p>March <span>15th</span> to April <span>10th</span></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="w3-agile-offer">
+                      <h5>From $650</h5>
+                      <div class="w3-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <h4>Curabitur viverra nunc</h4>
+                      <p>April <span>24th</span> to June <span>17th</span></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="w3-agile-offer">
+                      <h5>From $400</h5>
+                      <div class="w3-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                      <h4>Nullam sit amet quam</h4>
+                      <p>March <span>15th</span> to April <span>10th</span></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="clearfix"></div>
+              <script>
+                // You can also use "$(window).load(function() {"
+                $(function () {
+                  // Slideshow 4
+                  $("#slider3").responsiveSlides({
+                    auto: true,
+                    pager: true,
+                    nav: false,
+                    speed: 500,
+                    namespace: "callbacks",
+                    before: function () {
+                      $(".events").append("<li>before event fired.</li>");
+                    },
+                    after: function () {
+                      $(".events").append("<li>after event fired.</li>");
+                    },
+                  });
+                });
+              </script>
+              <!--banner Slider starts Here-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //offer -->
+      <!-- special -->
+      <div class="special" id="offers">
+        <div class="container">
+          <div class="agileits-heading">
+            <h3>Special Offers</h3>
+            <p>Vivamus pulvinar imperdiet</p>
+          </div>
+          <div class="agileits-special-grids">
+            <div id="owl-demo" class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="special-info">
+                  <div class="special-info-top">
+                    <div class="special-star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>Thailand</h4>
+                  </div>
+                  <div class="special-info-bottom">
+                    <ul>
+                      <li>65 <span>Hotels</span></li>
+                      <li>24 <span>Cities</span></li>
+                      <li>45 <span>Tours</span></li>
+                    </ul>
+                    <p>
+                      Vivamus pulvinar imperdiet lorem vel aliquam. Maecenas
+                      nunc tellus, feugiat blandit commodo eget
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="special-info special-info1">
+                  <div class="special-info-top">
+                    <div class="special-star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>Australia</h4>
+                  </div>
+                  <div class="special-info-bottom">
+                    <ul>
+                      <li>70 <span>Hotels</span></li>
+                      <li>15 <span>Cities</span></li>
+                      <li>37 <span>Tours</span></li>
+                    </ul>
+                    <p>
+                      Vivamus pulvinar imperdiet lorem vel aliquam. Maecenas
+                      nunc tellus, feugiat blandit commodo eget
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="special-info special-info2">
+                  <div class="special-info-top">
+                    <div class="special-star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>Bermuda</h4>
+                  </div>
+                  <div class="special-info-bottom">
+                    <ul>
+                      <li>45 <span>Hotels</span></li>
+                      <li>12 <span>Cities</span></li>
+                      <li>25 <span>Tours</span></li>
+                    </ul>
+                    <p>
+                      Vivamus pulvinar imperdiet lorem vel aliquam. Maecenas
+                      nunc tellus, feugiat blandit commodo eget
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="special-info">
+                  <div class="special-info-top">
+                    <div class="special-star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>Thailand</h4>
+                  </div>
+                  <div class="special-info-bottom">
+                    <ul>
+                      <li>65 <span>Hotels</span></li>
+                      <li>24 <span>Cities</span></li>
+                      <li>45 <span>Tours</span></li>
+                    </ul>
+                    <p>
+                      Vivamus pulvinar imperdiet lorem vel aliquam. Maecenas
+                      nunc tellus, feugiat blandit commodo eget
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="special-info special-info1">
+                  <div class="special-info-top">
+                    <div class="special-star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>Australia</h4>
+                  </div>
+                  <div class="special-info-bottom">
+                    <ul>
+                      <li>70 <span>Hotels</span></li>
+                      <li>15 <span>Cities</span></li>
+                      <li>37 <span>Tours</span></li>
+                    </ul>
+                    <p>
+                      Vivamus pulvinar imperdiet lorem vel aliquam. Maecenas
+                      nunc tellus, feugiat blandit commodo eget
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="special-info special-info2">
+                  <div class="special-info-top">
+                    <div class="special-star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>Bermuda</h4>
+                  </div>
+                  <div class="special-info-bottom">
+                    <ul>
+                      <li>45 <span>Hotels</span></li>
+                      <li>12 <span>Cities</span></li>
+                      <li>25 <span>Tours</span></li>
+                    </ul>
+                    <p>
+                      Vivamus pulvinar imperdiet lorem vel aliquam. Maecenas
+                      nunc tellus, feugiat blandit commodo eget
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //special -->
+      <!-- discount -->
+      <div class="discount jarallax">
+        <div class="container">
+          <div class="discount-top">
+            <h4>
+              Beautiful trips with Special offers
+              <span>customers with discount 65%</span>
+            </h4>
+            <div class="agileits-border"></div>
+            <h6>It’s limited seating! Hurry up</h6>
+          </div>
+          <!--timer-->
+          <div class="agileits-timer">
+            <div class="clock">
+              <div class="column days">
+                <div class="timer" id="days"></div>
+                <div class="text">DAYS</div>
+              </div>
+              <div class="timer days"></div>
+              <div class="column">
+                <div class="timer" id="hours"></div>
+                <div class="text">HOURS</div>
+              </div>
+              <div class="timer"></div>
+              <div class="column">
+                <div class="timer" id="minutes"></div>
+                <div class="text">MINUTES</div>
+              </div>
+              <div class="timer"></div>
+              <div class="column">
+                <div class="timer" id="seconds"></div>
+                <div class="text">SECONDS</div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <!--//timer-->
+          <div class="w3ls-booking">
+            <a href="#booking" class="scroll">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- //discount -->
+      <!-- subscribe -->
+      <div class="wthree-subscribe">
+        <div class="container">
+          <div class="agileits-heading">
+            <h3>Newsletter</h3>
+            <p>Vivamus pulvinar imperdiet</p>
+          </div>
+          <div class="w3-agileits-subscribe-form">
+            <form action="#" method="post">
+              <input
+                type="text"
+                placeholder="Subscribe"
+                name="Subscribe"
+                required=""
+              />
+              <button class="btn1">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- //subscribe -->
+      <!-- contact -->
+      <div class="contact" id="contact">
+        <div class="container">
+          <div class="agileits-heading">
+            <h3>Contact Us</h3>
+            <p>Vivamus pulvinar imperdiet</p>
+          </div>
+          <div class="agile-contact-grids">
+            <div class="col-md-6 agile-contact-left">
+              <div class="address-grid">
+                <h4>Our Address</h4>
+                <ul class="w3_address">
+                  <li>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>1234k
+                    Avenue, 4th block, <span>New York City.</span>
+                  </li>
+                  <li>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i
+                    ><a href="mailto:info@example.com">info@example.com</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>+1234 567 567
+                  </li>
+                </ul>
+              </div>
+              <div class="contact-form">
+                <h4>Contact Form</h4>
+                <form action="#" method="post">
+                  <div class="styled-input agile-styled-input-top">
+                    <input type="text" name="Name" required="" />
+                    <label>Name</label>
+                    <span></span>
+                  </div>
+                  <div class="styled-input">
+                    <input type="text" name="Email" required="" />
+                    <label>Email</label>
+                    <span></span>
+                  </div>
+                  <div class="styled-input">
+                    <input type="text" name="Subject" required="" />
+                    <label>Subject</label>
+                    <span></span>
+                  </div>
+                  <div class="styled-input">
+                    <textarea name="Message" required=""></textarea>
+                    <label>Message</label>
+                    <span></span>
+                  </div>
+                  <input type="submit" value="SEND" />
+                </form>
+              </div>
+            </div>
+            <div class="col-md-6 agile-contact-right">
+              <div class="agileits-map">
+                <h4>Our Location</h4>
+              </div>
+              <div class="map-grid">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387142.8400948023!2d-74.25819082602831!3d40.70583163923578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1470295981376"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <!-- //contact -->
+      <%- include('./includes/footer') %>
+    </div>
+
+    <%- include('./includes/scripts') %>
+  </body>
+</html>
