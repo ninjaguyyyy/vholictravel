@@ -2,7 +2,7 @@ const tours = [
   {
     id: 0,
     name: "Tour Du lịch Ẩm thực Việt",
-    price: 1314,
+    price: 57.28,
     priceDetail:
       "https://res.cloudinary.com/dwuma83gt/image/upload/v1623748695/price_1_uhpnch.png",
     image:
@@ -31,7 +31,7 @@ const tours = [
   {
     id: 1,
     name: "Tour du lịch khám phá thành phố",
-    price: 762,
+    price: 33.22,
     priceDetail:
       "https://res.cloudinary.com/dwuma83gt/image/upload/v1623748695/price_2_cnrxhg.png",
     image:
