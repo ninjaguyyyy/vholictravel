@@ -1,19 +1,678 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html lang="en">
   <head>
-    <%- include('./includes/headTag') %>
-  </head>
-  <body>
-    <div class="wrapper" id="wrapper">
-      <%- include('./includes/banner') %>
-      <div></div>
-      <%- include('./content/detail/popular') %>
-      <div></div>
-      <%- include('./content/detail/tab') %>
-      <div></div>
-      <%- include('./includes/footer') %>
-    </div>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Home | Triangle</title>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../static/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../static/css/animate.min.css" rel="stylesheet" />
+    <link href="../static/css/lightbox.css" rel="stylesheet" />
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/responsive.css" rel="stylesheet" />
 
-    <%- include('./includes/scripts') %>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Roboto", sans-serif !important;
+        font-weight: 400;
+      }
+    </style>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="images/ico/apple-touch-icon-144-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="images/ico/apple-touch-icon-114-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="images/ico/apple-touch-icon-72-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/ico/apple-touch-icon-57-precomposed.png"
+    /></head
+  ><!--/head-->
+
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 overflow">
+            <div class="social-icons pull-right">
+              <ul class="nav nav-pills"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-inverse" role="banner">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="/">
+              <h1>
+                <img src="../static/images/logo.png" width="150" alt="logo" />
+              </h1>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="/" style="font-weight: bold; font-size: 15px"
+                  >Trang chủ</a
+                >
+              </li>
+              <li class="">
+                <a href="/us" style="font-weight: bold; font-size: 15px"
+                  >Về chúng tôi</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--/#header-->
+
+    <section id="page-breadcrumb">
+      <div class="vertical-center sun">
+        <div class="container">
+          <div class="row" style="margin-top: 100px; margin-bottom: 50px">
+            <div class="action">
+              <div class="col-sm-12">
+                <h1 class="title" style="font-weight: 600">Chi tiết Tour</h1>
+                <p style="font-weight: 400">Vholic Travel.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/#page-breadcrumb-->
+
+    <section id="company-information" class="choose">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-sm-6 wow fadeInDown"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <img src="<%= tour.image %>" class="img-responsive" alt="" />
+          </div>
+          <div
+            class="col-sm-4 wow fadeInDown"
+            style="margin-left: 50px"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <h2 style="font-weight: 500"><%= tour.name %></h2>
+            <br />
+            <h4 style="font-weight: 400">Giá tour: <%= tour.price %>k/người</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/#company-information-->
+
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-sm-6 text-center padding wow fadeIn"
+            data-wow-duration="1000ms"
+            data-wow-delay="300ms"
+          >
+            <div class="single-service">
+              <div
+                class="wow scaleIn"
+                data-wow-duration="500ms"
+                data-wow-delay="300ms"
+              >
+                <img src="images/home/icon1.png" alt="" />
+              </div>
+              <h2 style="font-weight: 500">Sáng</h2>
+              <p style="font-weight: 400" class="text-justify">
+                <%= tour.schedule.morning %>
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 text-center padding wow fadeIn"
+            data-wow-duration="1000ms"
+            data-wow-delay="600ms"
+          >
+            <div class="single-service">
+              <div
+                class="wow scaleIn"
+                data-wow-duration="500ms"
+                data-wow-delay="600ms"
+              >
+                <img src="images/home/icon2.png" alt="" />
+              </div>
+              <h2 style="font-weight: 500">Trưa</h2>
+              <p style="font-weight: 400" class="text-justify">
+                <%= tour.schedule.afternoon %>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-sm-6 text-center wow fadeIn"
+            data-wow-duration="1000ms"
+            data-wow-delay="900ms"
+          >
+            <div class="single-service">
+              <div
+                class="wow scaleIn"
+                data-wow-duration="500ms"
+                data-wow-delay="900ms"
+              >
+                <img src="images/home/icon3.png" alt="" />
+              </div>
+              <h2 style="font-weight: 500">Chiều</h2>
+              <p style="font-weight: 400" class="text-justify">
+                <%= tour.schedule.evening %>
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 text-center wow fadeIn"
+            data-wow-duration="1000ms"
+            data-wow-delay="900ms"
+          >
+            <div class="single-service">
+              <div
+                class="wow scaleIn"
+                data-wow-duration="500ms"
+                data-wow-delay="900ms"
+              >
+                <img src="images/home/icon3.png" alt="" />
+              </div>
+              <h2 style="font-weight: 500">Tối</h2>
+              <p style="font-weight: 400" class="text-justify">
+                <%= tour.schedule.night %>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/#services-->
+
+    <section id="recent-projects" class="recent-projects">
+      <div class="container">
+        <div class="row">
+          <h1
+            class="title text-center wow fadeInDown"
+            data-wow-duration="500ms"
+            data-wow-delay="300ms"
+            style="font-weight: 500"
+          >
+            Ảnh Tour
+          </h1>
+          <p
+            class="text-center padding-bottom wow fadeInDown"
+            data-wow-duration="400ms"
+            data-wow-delay="400ms"
+          >
+            Vholic Travel
+          </p>
+          <div
+            class="col-sm-3 col-xs-6 wow fadeIn"
+            data-wow-duration="1000ms"
+            data-wow-delay="300ms"
+          >
+            <div class="portfolio-wrapper">
+              <div class="portfolio-single">
+                <div class="portfolio-thumb">
+                  <img
+                    src="images/portfolio/1.jpg"
+                    class="img-responsive"
+                    alt=""
+                  />
+                </div>
+                <div class="portfolio-view">
+                  <ul class="nav nav-pills">
+                    <li>
+                      <a
+                        href="images/portfolio/1.jpg"
+                        data-lightbox="example-set"
+                        ><i class="fa fa-eye"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h2>Sailing Vivamus</h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-3 col-xs-6 wow fadeIn"
+            data-wow-duration="1000ms"
+            data-wow-delay="400ms"
+          >
+            <div class="portfolio-wrapper">
+              <div class="portfolio-single">
+                <div class="portfolio-thumb">
+                  <img
+                    src="images/portfolio/2.jpg"
+                    class="img-responsive"
+                    alt=""
+                  />
+                </div>
+                <div class="portfolio-view">
+                  <ul class="nav nav-pills">
+                    <li>
+                      <a
+                        href="images/portfolio/2.jpg"
+                        data-lightbox="example-set"
+                        ><i class="fa fa-eye"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h2>Sailing Vivamus</h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-3 col-xs-6 wow fadeIn"
+            data-wow-duration="1000ms"
+            data-wow-delay="500ms"
+          >
+            <div class="portfolio-wrapper">
+              <div class="portfolio-single">
+                <div class="portfolio-thumb">
+                  <img
+                    src="images/portfolio/3.jpg"
+                    class="img-responsive"
+                    alt=""
+                  />
+                </div>
+                <div class="portfolio-view">
+                  <ul class="nav nav-pills">
+                    <li>
+                      <a
+                        href="images/portfolio/3.jpg"
+                        data-lightbox="example-set"
+                        ><i class="fa fa-eye"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h2>Sailing Vivamus</h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-3 col-xs-6 wow fadeIn"
+            data-wow-duration="1000ms"
+            data-wow-delay="600ms"
+          >
+            <div class="portfolio-wrapper">
+              <div class="portfolio-single">
+                <div class="portfolio-thumb">
+                  <img
+                    src="images/portfolio/4.jpg"
+                    class="img-responsive"
+                    alt=""
+                  />
+                </div>
+                <div class="portfolio-view">
+                  <ul class="nav nav-pills">
+                    <li>
+                      <a
+                        href="images/portfolio/4.jpg"
+                        data-lightbox="example-set"
+                        ><i class="fa fa-eye"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h2>Sailing Vivamus</h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-3 col-xs-6 wow fadeIn"
+            data-wow-duration="1000ms"
+            data-wow-delay="700ms"
+          >
+            <div class="portfolio-wrapper">
+              <div class="portfolio-single">
+                <div class="portfolio-thumb">
+                  <img
+                    src="images/portfolio/5.jpg"
+                    class="img-responsive"
+                    alt=""
+                  />
+                </div>
+                <div class="portfolio-view">
+                  <ul class="nav nav-pills">
+                    <li>
+                      <a
+                        href="images/portfolio/5.jpg"
+                        data-lightbox="example-set"
+                        ><i class="fa fa-eye"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h2>Sailing Vivamus</h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-3 col-xs-6 wow fadeIn"
+            data-wow-duration="1000ms"
+            data-wow-delay="800ms"
+          >
+            <div class="portfolio-wrapper">
+              <div class="portfolio-single">
+                <div class="portfolio-thumb">
+                  <img
+                    src="images/portfolio/6.jpg"
+                    class="img-responsive"
+                    alt=""
+                  />
+                </div>
+                <div class="portfolio-view">
+                  <ul class="nav nav-pills">
+                    <li>
+                      <a
+                        href="images/portfolio/6.jpg"
+                        data-lightbox="example-set"
+                        ><i class="fa fa-eye"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h2>Sailing Vivamus</h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-3 col-xs-6 wow fadeIn"
+            data-wow-duration="1000ms"
+            data-wow-delay="900ms"
+          >
+            <div class="portfolio-wrapper">
+              <div class="portfolio-single">
+                <div class="portfolio-thumb">
+                  <img
+                    src="images/portfolio/7.jpg"
+                    class="img-responsive"
+                    alt=""
+                  />
+                </div>
+                <div class="portfolio-view">
+                  <ul class="nav nav-pills">
+                    <li>
+                      <a
+                        href="images/portfolio/7.jpg"
+                        data-lightbox="example-set"
+                        ><i class="fa fa-eye"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h2>Sailing Vivamus</h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-3 col-xs-6 wow fadeIn"
+            data-wow-duration="1000ms"
+            data-wow-delay="1000ms"
+          >
+            <div class="portfolio-wrapper">
+              <div class="portfolio-single">
+                <div class="portfolio-thumb">
+                  <img
+                    src="images/portfolio/8.jpg"
+                    class="img-responsive"
+                    alt=""
+                  />
+                </div>
+                <div class="portfolio-view">
+                  <ul class="nav nav-pills">
+                    <li>
+                      <a
+                        href="images/portfolio/8.jpg"
+                        data-lightbox="example-set"
+                        ><i class="fa fa-eye"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h2>Sailing Vivamus</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/#recent-projects-->
+
+    <section id="clients">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div
+              class="clients text-center wow fadeInUp"
+              data-wow-duration="500ms"
+              data-wow-delay="300ms"
+            >
+              <p>
+                <img
+                  src="images/home/clients.png"
+                  class="img-responsive"
+                  alt=""
+                />
+              </p>
+              <h1 class="title" style="font-weight: 500">Bảng giá chi tiết</h1>
+              <p>Vholic Travel</p>
+            </div>
+            <div
+              class="clients-logo wow fadeIn"
+              data-wow-duration="1000ms"
+              data-wow-delay="600ms"
+            >
+              <div class="col-xs-12 col-sm-12">
+                <a href="#"
+                  ><img
+                    src="<%= tour.priceDetail %>"
+                    class="img-responsive"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/#clients-->
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center bottom-separator">
+            <img
+              src="images/home/under.png"
+              class="img-responsive inline"
+              alt=""
+            />
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="testimonial bottom">
+              <h2 style="font-weight: bold">Nhận xét</h2>
+              <div class="media">
+                <div class="pull-left">
+                  <a href="#"><img src="images/home/profile1.png" alt="" /></a>
+                </div>
+                <div class="media-body" style="font-weight: 400">
+                  <blockquote>
+                    The website is very good, doing it with great care Our group
+                    also intends to make a simple web site, but the results are
+                    far beyond expectations, enthusiastic, professional advice,
+                    and cute talk. On behalf of the group, thank you very much.
+                  </blockquote>
+                  <h3>
+                    <a href="#" style="font-weight: 400">- Torres Nguyen</a>
+                  </h3>
+                </div>
+              </div>
+              <div class="media">
+                <div class="pull-left">
+                  <a href="#"><img src="images/home/profile2.png" alt="" /></a>
+                </div>
+                <div class="media-body" style="font-weight: 400">
+                  <blockquote>
+                    Web của các bạn đã giúp chúng tôi rất nhiều trong việc phục
+                    vụ bài tập tốt nghiệp. Dễ thao tác và khá đầy đủ hạng mục mà
+                    tôi cần. Cảm ơn quý công ty.
+                  </blockquote>
+                  <h3><a href="" style="font-weight: 400">- Kim Nguyen</a></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="contact-info bottom">
+              <h2 style="font-weight: bold">Liên hệ</h2>
+              <address style="font-weight: 400">
+                E-mail:
+                <a href="mailto:vholictravel148@gmail.com"
+                  >vholictravel148@gmail.com</a
+                >
+                <br />
+                Điện thoại: 036 557 6259 <br />
+              </address>
+
+              <h2 style="font-weight: bold">Địa chỉ</h2>
+              <address style="font-weight: 400">
+                148 Trần Quang Khải, Phường Tân Định, Quận 1, Thành Phố Hồ Chí
+                Minh.
+              </address>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="contact-form bottom">
+              <h2 style="font-weight: bold">Đóng góp ý kiến</h2>
+              <form
+                id="main-contact-form"
+                name="contact-form"
+                method="post"
+                action="sendemail.php"
+              >
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    required="required"
+                    placeholder="Họ tên"
+                    style="font-weight: 400"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    required="required"
+                    placeholder="Email của bạn"
+                    style="font-weight: 400"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name="message"
+                    id="message"
+                    required="required"
+                    class="form-control"
+                    rows="8"
+                    placeholder="Nội dung đóng góp"
+                    style="font-weight: 400"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="submit"
+                    name="submit"
+                    class="btn btn-submit"
+                    value="Xác nhận"
+                    style="font-weight: 400"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="copyright-text text-center">
+              <p>&copy; Your Company 2014. All Rights Reserved.</p>
+              <p>
+                Designed by
+                <a target="_blank" href="/" style="font-weight: 400"
+                  >Vholic Travel</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--/#footer-->
+
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="../static/js/wow.min.js"></script>
+    <script type="text/javascript" src="../static/js/main.js"></script>
   </body>
 </html>
